@@ -3,6 +3,7 @@
 DEFINE_EDM_PLUGIN(HGCalVFEProcessorBaseFactory, HGCalVFEProcessorSums, "HGCalVFEProcessorSums");
 
 HGCalVFEProcessorSums::HGCalVFEProcessorSums(const edm::ParameterSet& conf) : HGCalVFEProcessorBase(conf) {
+    // Testing Compilation error
   vfeLinearizationSiImpl_ =
       std::make_unique<HGCalVFELinearizationImpl>(conf.getParameter<edm::ParameterSet>("linearizationCfg_si"))//testing error;
   vfeLinearizationScImpl_ =
